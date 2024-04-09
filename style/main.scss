@@ -1,0 +1,38 @@
+@use "./vendor/norlize";
+@use ".partials/colors";
+
+.navigations {
+    background-color: colors.$primary-color;
+  padding: 15px;  
+  nav {
+    a {
+        color: white;
+    text-decoration: none;
+    &:hover {
+        color:colors.$hover-color;
+    }
+.font-color {
+    color: colors.$primary-font-color;
+    }
+.fontcolor {
+    color: colors.$secondary-font-color;
+    }
+
+}
+    .header {
+        background-color: colors.$darker-background;
+        padding: 15px;
+        color: white;
+}
+      .footer {
+            background-color: colors.$dark-background;
+            padding: 15px;
+            color: white;
+        }
+//big screens
+@media (mein-width: 1024px) {
+    .navigations {
+        background-color: navy ;
+    }
+}
+
